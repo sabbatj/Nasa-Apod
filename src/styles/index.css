@@ -1,0 +1,98 @@
+/* index.css */
+/* Global styles */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url('../assets/Nasa-bg.png') no-repeat center center fixed;
+  background-size: cover;
+}
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+.hero-button {
+  background-color: #1f6feb;
+  color: white;
+  margin-top: 20px;
+}
+.hero-button:hover {
+  background-color: #265b9a;
+}
+.hero-text-3d {
+  color: white;
+  text-shadow: 1px 1px 1px #919191,
+               1px 2px 1px #919191,
+               1px 3px 1px #1f6feb,
+               1px 18px 6px rgba(16,16,16,0.4),
+               1px 22px 10px rgba(16,16,16,0.2),
+               1px 25px 35px rgba(16,16,16,0.2),
+               1px 30px 60px rgba(16,16,16,0.4);
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-gap: 20px;
+  align-items: stretch;
+}
+.grid > article {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px; 
+  overflow: hidden;
+}
+.grid > article img {
+  max-width: 100%;
+  height: auto; 
+  flex-shrink: 0;
+}
+.grid .text {
+  flex-grow: 1;
+  padding: 20px;
+  overflow: auto;
+}
+.search-bar-container {
+  margin-bottom: 40px;
+}
+.search-bar-textfield {
+  border: 3px solid #000000; 
+  color: white; 
+  border-radius: 10px;
+}
+.search-bar-textfield:not(:hover) {
+  border: 3px solid white; 
+  color: #000000; 
+  border-radius: 10px;
+}
+.search-bar-textfield input {
+  color: white ;
+   font-weight:bold;       
+}
+.MuiInputBase-input {
+  color: white; 
+}
+search-bar-textfield {
+  border: 10px solid #000000; 
+  color: white; 
+}
+@media (max-width: 600px) {
+  .MuiCardContent-root {
+    padding: 10px 2px !important;
+  }
+}
+@media (max-width: 1000px) {
+  .hero-text-3d {
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+}
